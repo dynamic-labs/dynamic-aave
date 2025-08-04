@@ -2,22 +2,15 @@
 
 import { MarketsInterface } from "@/components/MarketsInterface";
 import { DynamicWidget } from "@/lib/dynamic";
-import { useDarkMode } from "@/lib/useDarkMode";
 import Image from "next/image";
 
 export default function Main() {
-  const { isDarkMode } = useDarkMode();
-
   return (
-    <div
-      className={`min-h-screen flex flex-col transition-colors duration-300 ${
-        isDarkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-800"
-      }`}
-    >
+    <div className="min-h-screen flex flex-col transition-colors duration-300 bg-gray-100 text-gray-800">
       <div className="absolute top-0 flex items-center justify-between w-full p-4 border-b border-gray-200 dark:border-gray-700">
         <Image
           className="h-8 pl-4 object-contain"
-          src={isDarkMode ? "/logo-light.png" : "/logo-dark.png"}
+          src="/logo-dark.png"
           alt="dynamic"
           width="300"
           height="60"
