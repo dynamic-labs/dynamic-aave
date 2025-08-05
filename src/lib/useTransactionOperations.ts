@@ -208,7 +208,7 @@ export function useTransactionOperations(
   const executeRepay = async (
     marketAddress: string,
     currencyAddress: string,
-    amount: string
+    amount: string | "max"
   ) => {
     if (!walletClient?.account?.address) {
       console.error("Wallet not connected");
@@ -221,7 +221,10 @@ export function useTransactionOperations(
         amount: {
           erc20: {
             currency: evmAddress(currencyAddress),
-            value: bigDecimal(parseFloat(amount)),
+            value:
+              amount === "max"
+                ? { max: true }
+                : { exact: bigDecimal(parseFloat(amount)) },
           },
         },
         sender: evmAddress(walletClient.account.address),

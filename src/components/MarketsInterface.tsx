@@ -164,7 +164,7 @@ export function MarketsInterface() {
   const handleRepay = async (
     marketAddress: string,
     currencyAddress: string,
-    amount: string
+    amount: string | "max"
   ) => {
     try {
       const hash = await executeRepay(marketAddress, currencyAddress, amount);
