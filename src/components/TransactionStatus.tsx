@@ -45,7 +45,15 @@ export function TransactionStatus({
 
       {lastTransaction && (
         <div className="text-center text-sm text-green-600 mb-4">
-          ✅ {lastTransaction.type} successful! Hash: {lastTransaction.hash}
+          ✅ {lastTransaction.type} successful! Hash:{" "}
+          <a
+            href={`https://basescan.org/tx/${lastTransaction.hash}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700 underline"
+          >
+            {lastTransaction.hash}
+          </a>
         </div>
       )}
     </>

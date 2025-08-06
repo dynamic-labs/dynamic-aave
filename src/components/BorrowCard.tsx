@@ -14,7 +14,7 @@ interface BorrowCardProps {
   onRepay: (
     marketAddress: string,
     currencyAddress: string,
-    amount: string
+    amount: string | "max"
   ) => void;
 }
 
@@ -59,6 +59,17 @@ export function BorrowCard({
             className="bg-green-500 hover:bg-green-600 disabled:bg-gray-300 text-white text-xs px-2 py-1 rounded"
           >
             Repay
+          </button>
+        </div>
+        <div className="flex gap-2">
+          <button
+            onClick={() => {
+              onRepay(borrow.market.address, borrow.currency.address, "max");
+            }}
+            disabled={isOperating || !primaryWallet}
+            className="flex-1 bg-blue-500 hover:bg-blue-600 disabled:bg-gray-300 text-white text-xs px-2 py-1 rounded"
+          >
+            Repay Max
           </button>
         </div>
       </div>
