@@ -6,7 +6,7 @@ A Next.js app that shows how to build DeFi lending interfaces using Dynamic's MP
 
 Watch how it works:
 
-[![LG HDR 4K - Watch Video](https://previews.jumpshare.com/thumb/815bc01b796dd6f1733c957c5af194932234f3e0b13df01a0f10040acedd5083341c0eae61809267c502d5cbc79dce646010ec3be597f97708272c275cf0b8e9cf1e924ba81433f08c16918849df121949ae713eab18b38950c06d2c015ed814)](https://jumpshare.com/s/XLOgS6TH2ZZiHB7o1kGO)
+[![Dynamic x Aave](https://previews.jumpshare.com/thumb/815bc01b796dd6f1733c957c5af19493727813f4b2dd48fe787a3a5cea5351472ff0defe9c3d8521f7dfef38beb8f49fa0d548230d49f16d9afc889083965993ad72c263ddb76f5c73238ffe4153a11951b0a14e5e8ab00817c5d5725e01db8a)](https://jumpshare.com/share/utqvrZDf5j14mKLHy7Oz)
 
 ## What You Can Do
 
